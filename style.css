@@ -57,8 +57,8 @@ p {
 }
 
 .btn {
-    display: inline-block;
-    margin-top: 25px;
+    display: block;
+    margin: 25px auto 0 auto;
     padding: 12px 24px;
     background-color: #16a085;
     color: #fff;
@@ -66,6 +66,8 @@ p {
     border-radius: 6px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    max-width: 250px;
+    text-align: center;
 }
 
 .btn:hover {

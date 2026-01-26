@@ -1,0 +1,118 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+}
+
+.background {
+    background: url(fondo-floral.png) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.rings {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    color: #6b4226;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.intro {
+    font-weight: 500;
+    color: #555;
+}
+
+.rsvp {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #16a085;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background-color: #16a085;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #138d75;
+}
+
+.signature {
+    margin-top: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    color: #6b4226;
+}
+
+@media (max-width: 780px) {
+    .card {
+        padding: 20px;
+        max-width: 95%;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .rings {
+        max-width: 80px;
+    }
+
+    @media (max-width: 480px) {
+        .card {
+            padding: 15px;
+        }
+
+        h1 {
+            font-size: 1.4em;
+        }
+
+        p {
+            font-size: 0.95em;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+        }
+    }
+}

@@ -16,27 +16,35 @@ html {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    padding: 40px;
-    max-width: 700px;
-    width: 100%;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
     text-align: center;
 }
 
-.rings {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 12px;
+/* Contenedor de imagen + título */
+.header {
+    display: flex;
+    flex-direction: column;
+    /* imagen arriba, título debajo */
+    align-items: center;
+    gap: 10px;
+    /* espacio entre imagen y título */
     margin-bottom: 20px;
+}
+
+.rings {
+    max-width: 120px;
+    border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     font-size: 2em;
-    color: #6b4226;
-    margin-bottom: 20px;
+    color: #975b3a;
+    margin: 0;
 }
 
 p {
@@ -71,7 +79,8 @@ p {
 }
 
 .btn:hover {
-    background-color: #138d75;
+    background-color: #1666a0;
+    color: #0ceca5;
 }
 
 .signature {
@@ -81,7 +90,34 @@ p {
     color: #6b4226;
 }
 
+/* Responsividad */
+
+@media (min-width: 781px) {
+    .header {
+        flex-direction: row;
+        /* en pantallas grandes: lado a lado */
+        justify-content: center;
+    }
+
+    .rings {
+        max-width: 150px;
+        margin-right: 20px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+        text-align: left;
+    }
+}
+
+
 @media (max-width: 780px) {
+
+    .header {
+        flex-direction: row;
+        justify-content: center;
+    }
+
     .card {
         padding: 20px;
         max-width: 95%;
@@ -96,25 +132,29 @@ p {
     }
 
     .rings {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 15px;
+    }
+
+    .rings {
         max-width: 80px;
     }
 
-    @media (max-width: 480px) {
-        .card {
-            padding: 15px;
-        }
+    h1 {
+        font-size: 1.4em;
+    }
 
-        h1 {
-            font-size: 1.4em;
-        }
+    p {
+        font-size: 0.95em;
+    }
 
-        p {
-            font-size: 0.95em;
-        }
-
-        .btn {
-            width: 100%;
-            padding: 12px;
-        }
+    .btn {
+        width: 100%;
+        padding: 12px;
     }
 }

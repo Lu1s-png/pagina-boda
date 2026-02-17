@@ -35,7 +35,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 1px;
     margin-bottom: 20px;
 }
 
@@ -47,22 +47,23 @@ html {
     margin: center;
 }
 
-h1 {
+/*h1 {
     font-family: 'Candlescript', cursive;
     font-size: clamp(28px, 6vw, 72px);
     color: #FFD700;
     text-align: center;
-}
+}*/
 
 h2 {
-    font-size: 2.5em;
-    color: #fff;
+    font-size: clamp(28px, 6vw, 72px);
+    color: #D4AF37;
+    text-shadow: 0 0 10px rgb(255, 215, 0, 0.6);
     text-align: center;
     font-family: 'Candlescript', cursive;
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: clamp(28px, 6vw, 72px);
     color: #fff;
     margin: 0;
     text-align: center;
@@ -70,7 +71,7 @@ h3 {
 }
 
 p {
-    font-size: 1.1em;
+    font-size: clamp(16px, 4vw, 24px);
     line-height: 1.6;
     color: #fff;
     font-family: 'Parisienne', cursive;
@@ -79,21 +80,27 @@ p {
 .btn {
     display: block;
     margin: 25px auto 0 auto;
-    padding: 12px 24px;
-    background-color: #16a085;
-    color: #fff;
+    padding: 10px 20px;
+    background-color: #ffd90097;
+    /* dorado */
+    color: #000000;
     text-decoration: none;
-    border-radius: 6px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
     max-width: 250px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .btn:hover {
-    background-color: #1666a0;
-    color: #0ceca5;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.6);
 }
+
 
 .signature {
     margin-top: 30px;

@@ -13,7 +13,7 @@ html {
 .background {
     background: url(Fondo.jpg) no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -49,9 +49,16 @@ html {
 
 h1 {
     font-family: 'Candlescript', cursive;
-    font-size: 2.5em;
+    font-size: clamp(28px, 6vw, 72px);
     color: #FFD700;
     text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+    font-family: 'Candlescript', cursive;
 }
 
 h3 {
@@ -66,7 +73,7 @@ p {
     font-size: 1.1em;
     line-height: 1.6;
     color: #fff;
-    font-family: 'Candlescript', cursive;
+    font-family: 'Parisienne', cursive;
 }
 
 .btn {
@@ -100,9 +107,9 @@ p {
     font-size: clamp(1.2em, 4vw, 2em);
     /* escala según pantalla */
     font-weight: bold;
-    color: #FFD700;
+    color: #fff;
     /* dorado */
-    background: rgba(22, 160, 133, 0.7);
+    /*background: rgba(22, 160, 133, 0.7);*/
     padding: 10px 15px;
     border-radius: 10px;
     display: flex;
@@ -132,7 +139,7 @@ p {
     }
 
     h1 {
-        font-size: 2.2em;
+        font-size: 70px;
         text-align: left;
     }
 

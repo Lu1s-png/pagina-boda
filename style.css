@@ -70,7 +70,7 @@ html {
     margin: 0 auto;
 }
 
-h2 {
+h1 {
     font-size: clamp(28px, 6vw, 72px);
     color: #D4AF37;
     text-shadow: 0 0 10px rgb(255, 215, 0, 0.6);
@@ -80,12 +80,13 @@ h2 {
     margin-bottom: 0;
 }
 
-h3 {
-    font-size: clamp(28px, 6vw, 72px);
+h2 {
+    font-size: clamp(32px, 7vw, 90px);
     color: #000000;
     margin: 0;
     text-align: center;
     font-family: 'Candlescript', cursive;
+    line-height: 1.8;
 }
 
 p {
@@ -173,7 +174,7 @@ p {
         /* evita que se alinee a la izquierda */
     }
 
-    h3 {
+    h2 {
         font-size: 1.5em;
         text-align: center;
     }
@@ -194,11 +195,13 @@ p {
     }
 
     h1 {
-        font-size: 1.6em;
+        font-size: 2.2em;
+        line-height: 1.8;
     }
 
-    h3 {
-        font-size: 1.5em;
+    h2 {
+        font-size: 1.8em;
+        line-height: 1.9;
     }
 
     p {
@@ -221,11 +224,13 @@ p {
     }
 
     h1 {
-        font-size: 1.4em;
+        font-size: 2.2em;
+        line-height: 1.8;
     }
 
-    h3 {
-        font-size: 1.5em;
+    h2 {
+        font-size: 1.9em;
+        line-height: 1.8;
     }
 
     p {

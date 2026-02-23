@@ -55,7 +55,7 @@ html {
 
 /* Imagen de los anillos */
 .rings {
-    width: clamp(200px, 40vw, 500px);
+    width: clamp(200px, 50vw, 600px);
     /* tamaño responsivo */
     height: auto;
     display: block;
@@ -189,14 +189,18 @@ p {
         justify-content: center;
     }
 
+    .rings {
+        max-width: 500px;
+    }
+
     .card {
         padding: 20px;
         max-width: 95%;
     }
 
     h1 {
-        font-size: 2.2em;
-        line-height: 1.9;
+        font-size: 2.8em;
+        line-height: 2.2;
     }
 
     h2 {
@@ -210,7 +214,7 @@ p {
     }
 
     .rings {
-        max-width: 100px;
+        width: 60vw;
     }
 }
 
@@ -220,12 +224,12 @@ p {
     }
 
     .rings {
-        max-width: 100px;
+        width: 60vw;
     }
 
     h1 {
-        font-size: 2.2em;
-        line-height: 1.9;
+        font-size: 2.8em;
+        line-height: 2.2;
     }
 
     h2 {
